@@ -1,0 +1,13 @@
+const shoppingListArr1 = [];
+shoppingListArr1.push("Milk", "Bread", "Apples");
+shoppingListArr1.splice(1, 1, "Bananas", "Eggs");
+shoppingListArr1.pop(shoppingListArr1.length - 1);
+console.log(shoppingListArr1);
+shoppingListArr1.sort();
+console.log(shoppingListArr1);
+console.log(shoppingListArr1.indexOf("Milk"));
+shoppingListArr1.splice(1, "Carrots", "Lettuce");
+const shoppingListArr2 = ["Juice", "Pop"];
+const shoppingListArr3 = shoppingListArr1.concat(shoppingListArr2, shoppingListArr2);
+console.log(shoppingListArr3);
+console.log(shoppingListArr3.lastIndexOf("Pop"));
