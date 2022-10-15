@@ -5,3 +5,23 @@
 // Create an IIFE expression, assigning it to a new result variable, and assign a new value to a variable of the same name within this scope. Return this local value to the result variable and invoke the function. Print the result variable, along with the variable name you've been using: what value does it contain now?
 // Lastly, create an anonymous function that has a parameter. Add logic that will assign a passed-in value to the same variable name as the other steps, and print it as part of a string sentence. Invoke the function and pass in your desired value within the rounded brackets.
 
+let var1 = "1000";
+
+(()=>{
+    let var1 = "3000";
+    console.log(var1);
+})();
+
+let result = (()=>{
+    let var1 = "4000";
+    return var1;
+})();
+
+console.log("var1: " + result);
+
+let function1 = function (var2) {
+    let var1 = var2;
+    console.log("var1: " + var1);
+};
+
+function1("5000");
